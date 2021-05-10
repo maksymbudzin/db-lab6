@@ -121,19 +121,7 @@ CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`Trip_Order`
 -- Table `budzin_db`.`Trip_Order_TripAdvizor_object`
 -- -----------------------------------------------------
 
-
-insert into budzin_db_lab6_jdbc.Tripadvizor_object (id, objec_name, number_of_star, free_room, busy_room, all_inclusive,
-                                ultra_all_inclusive)
-values ('1', 'Amway', '5', '50', '30', '1', '0'),
-       ('2', 'Hotel_Lviv', '4', '50', '30', '1', '0'),
-       ('3', '7Dniv', '3', '80', '20', '1', '0'),
-       ('4', 'Ramada', '5', '50', '30', '1', '0'),
-       ('5', 'Hotel_kyiv', '5', '50', '20', '1', '0'),
-       ('6', 'Plaza', '4', '50', '30', '1', '0'),
-       ('7', 'Radison', '5', '50', '30', '1', '0'),
-       ('8', 'Amway_hotel', '3', '50', '30', '1', '0'),
-       ('9', 'Radison', '5', '50', '20', '1', '0'),
-       ('10', 'Amway', '5', '50', '30', '1', '0');
+ 
 
 INSERT INTO budzin_db_lab6_jdbc.Customer (id, name, surname)
 VALUES (1, 'Smart', 'Man'),
