@@ -13,7 +13,7 @@ DROP TABLE IF EXISTS Trip_Order;
 -- -----------------------------------------------------
 -- Table `budzin_db`.`TripAdvizor_object`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`TripAdvizor_object`
+CREATE TABLE IF NOT EXISTS `TripAdvizor_object`
 (
     `id`                  INT         NOT NULL AUTO_INCREMENT,
     `objec_name`          VARCHAR(30) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`TripAdvizor_object`
 -- -----------------------------------------------------
 -- Table `budzin_db`.`Customer`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`Customer`
+CREATE TABLE IF NOT EXISTS `Customer`
 (
     `id`      INT         NOT NULL AUTO_INCREMENT,
     `name`    VARCHAR(20) NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`Customer`
 -- -----------------------------------------------------
 -- Table `budzin_db`.`Feedback`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`Feedback`
+CREATE TABLE IF NOT EXISTS `Feedback`
 (
     `id`                     INT         NOT NULL AUTO_INCREMENT,
     `feedback_text`          VARCHAR(45) NOT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`Feedback`
 -- -----------------------------------------------------
 -- Table `budzin_db`.`rating`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`rating`
+CREATE TABLE IF NOT EXISTS  `rating`
 (
     `Id`                     INT    NOT NULL AUTO_INCREMENT,
     `number_of_star`         INT(5) NOT NULL,
@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`rating`
 -- -----------------------------------------------------
 -- Table `budzin_db`.`Owner_information`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`Owner_information`
+CREATE TABLE IF NOT EXISTS  `Owner_information`
 (
     `id`      INT         NOT NULL AUTO_INCREMENT,
     `Name`    VARCHAR(45) NOT NULL,
@@ -95,7 +95,7 @@ CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`Owner_information`
 -- -----------------------------------------------------
 -- Table `budzin_db`.`Location`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`Location`
+CREATE TABLE IF NOT EXISTS  `Location`
 (
     `id`      INT         NOT NULL AUTO_INCREMENT,
     `Country` VARCHAR(45) NOT NULL,
@@ -114,7 +114,7 @@ CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`Location`
 -- -----------------------------------------------------
 -- Table `budzin_db`.`Trip_Order`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`Trip_Order`
+CREATE TABLE IF NOT EXISTS  `Trip_Order`
 (
     `id`               INT        NOT NULL AUTO_INCREMENT,
     `price_in_dollars` VARCHAR(4) NOT NULL,
