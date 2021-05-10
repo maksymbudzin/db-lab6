@@ -121,9 +121,20 @@ CREATE TABLE IF NOT EXISTS budzin_db_lab6_jdbc.`Trip_Order`
 -- Table `budzin_db`.`Trip_Order_TripAdvizor_object`
 -- -----------------------------------------------------
 
- 
+insert into TripAdvizor_object (id, objec_name, number_of_star, free_room, busy_room, all_inclusive,
+                                ultra_all_inclusive)
+values ('1', 'Amway', '5', '50', '30', '1', '0'),
+       ('2', 'Hotel_Lviv', '4', '50', '30', '1', '0'),
+       ('3', '7Dniv', '3', '80', '20', '1', '0'),
+       ('4', 'Ramada', '5', '50', '30', '1', '0'),
+       ('5', 'Hotel_kyiv', '5', '50', '20', '1', '0'),
+       ('6', 'Plaza', '4', '50', '30', '1', '0'),
+       ('7', 'Radison', '5', '50', '30', '1', '0'),
+       ('8', 'Amway_hotel', '3', '50', '30', '1', '0'),
+       ('9', 'Radison', '5', '50', '20', '1', '0'),
+       ('10', 'Amway', '5', '50', '30', '1', '0');
 
-INSERT INTO budzin_db_lab6_jdbc.Customer (id, name, surname)
+INSERT INTO  Customer (id, name, surname)
 VALUES (1, 'Smart', 'Man'),
        (2, 'Shurhot', 'Vitalii'),
        (3, 'Vislak', 'Nazarii'),
@@ -135,7 +146,7 @@ VALUES (1, 'Smart', 'Man'),
        (9, 'Roman', 'Hadupiak'),
        (10, 'Amdriy', 'Pidkivka');
 
-insert into budzin_db_lab6_jdbc.Feedback (id, feedback_text, time, Customer_id, Customer_Trip_Order_id)
+insert into  Feedback (id, feedback_text, time, Customer_id, Customer_Trip_Order_id)
 values ('1', 'very cool', '04.01.2002', '1', '1'),
        ('2', 'COOOlll...', '08.05.2000', '2', '1'),
        ('3', 'goood', '05.04.2012', '3', '1'),
@@ -147,7 +158,7 @@ values ('1', 'very cool', '04.01.2002', '1', '1'),
        ('9', 'very nice', '04.01.2015', '9', '1'),
        ('10', 'very beautiful', '04.01.2012', '10', '1');
 
-insert into budzin_db_lab6_jdbc.Rating (Id, number_of_star, date, Customer_id, Customer_Trip_Order_id)
+insert into  Rating (Id, number_of_star, date, Customer_id, Customer_Trip_Order_id)
 values ('1', '5', '04.01.2017', '1', '1'),
        ('2', '5', '08.09.2019', '1', '1'),
        ('3', '5', '01.01.2020', '1', '1'),
@@ -159,7 +170,7 @@ values ('1', '5', '04.01.2017', '1', '1'),
        ('9', '5', '04.01.2017', '1', '1'),
        ('10', '5', '04.01.2017', '1', '1');
 
-insert into budzin_db_lab6_jdbc.Owner_information (id, Name, Surname, country)
+insert into  Owner_information (id, Name, Surname, country)
 values ('1', 'Maksym', 'Budzin', 'Ukraine'),
        ('2', 'Maksym', 'Budzin', 'Ukraine'),
        ('3', 'Maksym', 'Budzin', 'Ukraine'),
@@ -172,7 +183,7 @@ values ('1', 'Maksym', 'Budzin', 'Ukraine'),
        ('10', 'Maksym', 'Budzin', 'Ukraine');
 
 
-insert into budzin_db_lab6_jdbc.Location (id, Country, City)
+insert into  Location (id, Country, City)
 values ('1', 'Ukraine', 'Lviv'),
        ('2', 'USA', 'Washington'),
        ('3', 'Bilorus', 'Minsk'),
@@ -187,7 +198,7 @@ values ('1', 'Ukraine', 'Lviv'),
 
 
 
-insert into budzin_db_lab6_jdbc.Trip_Order (id, price_in_dollars, date, Customer_id)
+insert into  Trip_Order (id, price_in_dollars, date, Customer_id)
 values (1, 200, '04.01.2002', '1'),
        (2, 175, '04.01.2002', '1'),
        (3, 50, '04.01.2002', '1'),
