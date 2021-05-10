@@ -134,17 +134,7 @@ values ('1', 'Amway', '5', '50', '30', '1', '0'),
        ('9', 'Radison', '5', '50', '20', '1', '0'),
        ('10', 'Amway', '5', '50', '30', '1', '0');
 
-INSERT INTO  Customer (id, name, surname)
-VALUES (1, 'Smart', 'Man'),
-       (2, 'Shurhot', 'Vitalii'),
-       (3, 'Vislak', 'Nazarii'),
-       (4, 'Melnychuk', 'Valentyna'),
-       (5, 'Pavelchak', 'Andrii '),
-       (6, 'Maksym', 'Budzin'),
-       (7, 'Svyatoslav', 'Kostiv'),
-       (8, 'Dmitro', 'Titusa'),
-       (9, 'Roman', 'Hadupiak'),
-       (10, 'Amdriy', 'Pidkivka');
+ 
 
 insert into  Feedback (id, feedback_text, time, Customer_id, Customer_Trip_Order_id)
 values ('1', 'very cool', '04.01.2002', '1', '1'),
